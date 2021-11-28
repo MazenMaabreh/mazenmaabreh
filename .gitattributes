@@ -1,2 +1,64 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html forms</title>
+    </head>
+    <body style="background-color:rgb(219, 219, 219)">
+        <h1>HTML Forms </h1>
+        <h2 style="color:red">1-Input</h2>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="Mazen"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Maabreh"><br><br>
+            <input type="submit"value="Submit">
+        </form>
+        <h2 style="color:red">2-Radio Buttons</h2>
+        <p>Choose your favorite hot drink:</p>
+        <form action="/action_page.php">
+            <input type="radio" id="Tea" name="fav_drink" value="Tea">
+            <label for="Tea">Tea</label><br>
+            <input type="radio" id="Nescafe" name="fav_drink" value="Nescafe">
+            <label for="Nescafe">Nescafe</label><br>
+            <input type="radio" id="coffee" name="fav_drink" value="coffee">
+            <label for="coffee">coffee</label><br><br>
+            <input type="submit" value="Submit">
+        </form> 
+        <h2 style="color:red">3-Checkboxes</h2>
+        <p>Choose your hobbies: </p>
+        <form action="/action_page.php">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="reading">
+            <label for="vehicle1"> Reading </label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="football">
+            <label for="vehicle2">Football</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="swimming">
+            <label for="vehicle3">Swimming</label><br>
+            <input type="checkbox" id="vehicle4" name="vehicle4" value="climbing">
+            <label for="vehicle4">climbing</label><br><br>
+            <input type="submit" value="Submit">
+        </form> 
+
+        <h2 style="color:red">4-Input min and max attributes</h2>
+        <p>Enter your birthdate:</p>
+        <form action="/action_page.php">
+            <label for="datemax">Enter a date before 2021/11/28:</label>
+            <input type="date" id="datemax" name="datemax" max="2021/11/28"><br><br>
+            <input type="image" src="C:\Users\user\Downloads\supmit img.svg" alt="Submit" width="70" height="48">
+        </form>
+        <h2 style="color:red">5-Input list attribute</h2>
+        <p>Choose the best browser to use:</p>
+        <form action="/action_page.php">
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+            <option value="Others...">
+            </datalist>
+            <input type="submit" value="Submit"><br><br><br><br>
+        </form>
+    </body>
+</html>
